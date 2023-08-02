@@ -22,6 +22,8 @@
         <script src="assets/js/modernizr-custom.js"></script>         
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3D-ezfZAqqynFwHhcpdvoJWI8l0YDVps&callback=initMap&libraries=&v=weekly" defer></script>
+        <link rel="stylesheet" href="./style.css"/>
+        <script src="./app.js"></script>         
     </head>     
     <body class="slideshow-background"> 
         <div id="preloader" class="preloader preloader-dark"> 
@@ -119,28 +121,6 @@
                                         <button class="btn btn-white" type="submit" id="sf-submit" name="sf-submit">Contact Us</button>                                         
                                     </div>                                     
                                     <div class="row">
-                                        <script>
-      "use strict";
-
-      function initMap() {
-        const myLatLng = {
-          lat: 40.12150192260742,
-          lng: -100.45039367675781
-        };
-        const map = new google.maps.Map(document.getElementById("gmp-map"), {
-          zoom: 4,
-          center: myLatLng,
-          fullscreenControl: false,
-          zoomControl: false,
-          streetViewControl: false
-        });
-        new google.maps.Marker({
-          position: myLatLng,
-          map,
-          title: "My location"
-        });
-      }
-    </script>
                                         <div id="gmp-map"></div>                                         
                                         <div class="col-12 mb-4 mb-lg-0 animated" data-animation="fadeInUp" data-animation-delay="1000" style="padding-left: 0px !important; padding-right: 0px !important;"> 
                                             <div class="feature-block d-flex"> 

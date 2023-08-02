@@ -20,8 +20,6 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:100,200,300,400,500,700" rel="stylesheet"> 
         <link rel="shortcut icon" href="assets/images/favicon.ico"> 
         <script src="assets/js/modernizr-custom.js"></script>         
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3D-ezfZAqqynFwHhcpdvoJWI8l0YDVps&callback=initMap&libraries=&v=weekly" defer></script>
     </head>     
     <body class="slideshow-background"> 
         <div id="preloader" class="preloader preloader-dark"> 
@@ -35,7 +33,7 @@
         <div class="site-container"> 
             <div id="top"></div>             
             <!-- Site header -->             
-            <header class="header-mobile-light site-header"> 
+            <header class="site-header header-mobile-light"> 
                 <div class="header-brand"> 
                     <!-- Logo -->                     <a class="logo" href="#"> <img class="logo-light" src="assets/images/LOGO_MYA.png" alt=""> <img class="logo-dark" src="assets/images/LOGO_MYA_BN.png" alt="" width="200px"> </a> 
                     <button type="button" class="nav-toggle" id="navigation-toggle"> <span></span> <span></span> <span></span> 
@@ -114,35 +112,9 @@
                                 <div class="col-12 col-lg-10 mx-lg-auto"> 
                                     <h2 class="text-center animated" data-animation="fadeInUp">About Us</h2> 
                                     <div class="divider divider-alt bg-white mx-auto animated" data-animation="fadeInUp" data-animation-delay="200"></div>                                     
-                                    <p class="text-center mb-5 animated" data-animation="fadeInUp" data-animation-delay="400"> An immersive restaurant destination that reimagines the dining experience, Maiz y Agave will introduce the authentic flavors of Oaxaca, Mexico to Miami through a concept that marries culture, cuisine, and fine art.</p>
-                                    <div class="row animated" data-animation="fadeInUp" data-animation-delay="1000" style="text-align: center; justify-content: center; padding-top: 17px; padding-bottom: 28px;"> 
-                                        <button class="btn btn-white" type="submit" id="sf-submit" name="sf-submit">Contact Us</button>                                         
-                                    </div>                                     
-                                    <div class="row">
-                                        <script>
-      "use strict";
-
-      function initMap() {
-        const myLatLng = {
-          lat: 40.12150192260742,
-          lng: -100.45039367675781
-        };
-        const map = new google.maps.Map(document.getElementById("gmp-map"), {
-          zoom: 4,
-          center: myLatLng,
-          fullscreenControl: false,
-          zoomControl: false,
-          streetViewControl: false
-        });
-        new google.maps.Marker({
-          position: myLatLng,
-          map,
-          title: "My location"
-        });
-      }
-    </script>
-                                        <div id="gmp-map"></div>                                         
-                                        <div class="col-12 mb-4 mb-lg-0 animated" data-animation="fadeInUp" data-animation-delay="1000" style="padding-left: 0px !important; padding-right: 0px !important;"> 
+                                    <p class="text-center mb-5 animated" data-animation="fadeInUp" data-animation-delay="400"> An immersive restaurant destination that reimagines the dining experience, Maiz y Agave will introduce the authentic flavors of Oaxaca, Mexico to Miami through a concept that marries culture, cuisine, and fine art.</p> 
+                                    <div class="row"> 
+                                        <div class="col-12 col-lg-6 mb-4 mb-lg-0 animated" data-animation="fadeInUp" data-animation-delay="1000"> 
                                             <div class="feature-block d-flex"> 
                                                 <div class="feature-icon"> 
                                                     <div> <i class="ion-ios-heart-outline"></i> 
@@ -151,7 +123,7 @@
                                                 <div class="feature-content ml-4"> 
                                                     <h4>You’re going to love it</h4> 
                                                     <p>Right across Coral Gables' City Hall, our sunset rooftop bar will be the perfect spot to enjoy a cocktail after work.</p> 
-                                                </div>
+                                                </div>                                                 
                                             </div>                                             
                                         </div>                                         
                                     </div>                                     
