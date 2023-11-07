@@ -118,10 +118,14 @@ License: https://themeforest.net/licenses/standard
 				transition: 'fade',
 				transitionDuration: 1000,
 				slides: [
-					{ src: 'demo/images/image-15.jpg' },
-					{ src: 'demo/images/image-16.jpg' },
-					{ src: 'demo/images/image-17.jpg' },
-					{ src: 'demo/images/image-4.jpg' }
+                    { src: 'demo/images/image-4.jpg' },
+                    { src: 'demo/images/image-5.jpg' },
+                    { src: 'demo/images/image-6.jpg' },
+                    { src: 'demo/images/image-7.jpg' },
+                    { src: 'demo/images/image-8.jpg' },
+                    { src: 'demo/images/image-9.jpg' },
+                    { src: 'demo/images/image-10.jpg' },       
+					
 				]
 			});
 		}
