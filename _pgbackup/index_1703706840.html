@@ -45,13 +45,11 @@
                 <nav id="navigation" class="site-nav"> 
                     <div class="nav-container"> 
                         <ul> 
-                            <li>
-                                <a href="#home" class="move-to">Home</a>
+                            <li><a href="#home" class="move-to">Home</a>
                             </li>                             
                             <li>
 </li>                             
-                            <li>
-                                <a href="#about" class="move-to">About</a>
+                            <li><a href="#about" class="move-to">About</a>
                             </li>                             
                             <li>
 </li>                             
@@ -63,14 +61,12 @@
             </header>             
             <nav class="tooltip-nav"> 
                 <ul> 
-                    <li>
-                        <a href="#home" class="move-to" data-toggle="tooltip" data-placement="left" title="Home"><span></span></a>
+                    <li><a href="#home" class="move-to" data-toggle="tooltip" data-placement="left" title="Home"><span></span></a>
                     </li>                     
-                    <li>
-                        <a href="#about" class="move-to" data-toggle="tooltip" data-placement="left" title="About"><span></span></a>
+                    <li><a href="#about" class="move-to" data-toggle="tooltip" data-placement="left" title="About"><span></span></a>
                     </li>                     
-                    <li>
-</li>                     
+                    <li><a href="#photo" class="move-to" data-toggle="tooltip" data-placement="left" title="Gallery"><span></span></a>
+                    </li>                     
                 </ul>                 
             </nav>             
             <!-- Page content -->             
@@ -93,7 +89,7 @@
                                             </li>                                             
                                         </ul>                                         
                                     </div>                                     
-                                    <p class="fs--18 text-center mb-5 animated" data-animation="fadeInUp" data-animation-delay="900">We draw inspiration from your colors, textures, aromas, and your people. We are faithful and proud of our Mexican roots, to the place we come from, and to all its richness and variety. </p> 
+                                    <p class="fs--18 text-center mb-5 animated" data-animation="fadeInUp" data-animation-delay="900">Soon, you will be able to experience the finest Mexican Cuisine in Coral Gables. Welcome to Maiz y Agave.</p> 
                                     <div class="text-center"> 
 </div>                                     
                                 </div>                                 
@@ -101,7 +97,7 @@
                         </div>                         
                     </section>                     
                 </div>                 
-                <!-- Photo                
+                <!-- Photo -->                 
                 <div class="page-slide" id="photo"> 
                     <section class="minh--80vh fullscreen-lg d-flex align-items-center text-white"> 
                         <div class="container"> 
@@ -155,7 +151,7 @@
                             </div>                             
                         </div>                         
                     </section>                     
-                </div>             -->                 
+                </div>                 
                 <!-- About -->                 
                 <div class="page-slide" id="about"> 
                     <section class="minh--80vh fullscreen-lg d-flex align-items-center text-white"> 
@@ -164,12 +160,34 @@
                                 <div class="col-12 col-lg-10 mx-lg-auto"> 
                                     <h2 class="text-center animated" data-animation="fadeInUp">About Us</h2> 
                                     <div class="divider divider-alt bg-white mx-auto animated" data-animation="fadeInUp" data-animation-delay="200"></div>                                     
-                                    <p class="text-center mb-5 animated" data-animation="fadeInUp" data-animation-delay="400"> lt fills us with pride to guide you and explain everything we offer because we want you to fully experience the most authentic Mexico. Every part of our home is filled with stories, food, objects, people, humor, and celebratory experiences for you. Because when we open the door to our home, we open the doors of our hearts. Because only in this way can we offer and live an experience that connects person to person, that is passionate, respectful, affectionate, and devoted. Only by opening our hearts to each and every person. Each dish was handmade by Oaxacan artisans. In every comer, you will see traditional crafts made by more than 100 families. Maiz y Agave is focused on supporting the Oaxacan community and showcasing that this land produces pride.</p>
+                                    <p class="text-center mb-5 animated" data-animation="fadeInUp" data-animation-delay="400"> An immersive restaurant destination that reimagines the dining experience, Maiz y Agave will introduce the authentic flavors of Oaxaca, Mexico to Miami through a concept that marries culture, cuisine, and fine art.</p>
                                     <div class="row animated" data-animation="fadeInUp" data-animation-delay="1000" style="text-align: center; justify-content: center; padding-top: 17px; padding-bottom: 28px;"> <a class="btn btn-white" href="mailto:contact@maizyagave.us" target="_blank">Contact Us</a> 
                                     </div>                                     
                                     <div class="row">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.6321139972374!2d-80.26238359999999!3d25.749676800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b790a7a9e295%3A0x5fbfa564f06a765a!2s375%20Miracle%20Mile%2C%20Miami%2C%20FL%2033134%2C%20USA!5e0!3m2!1sen!2smx!4v1703705041202!5m2!1sen!2smx" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                                         
-                                        <div class="col-12 mb-4 mb-lg-0 animated" data-animation="fadeInUp" data-animation-delay="1000" style="padding-left: 0px !important; padding-right: 0px !important; padding-top: 25px;"> 
+                                        <script>
+      "use strict";
+
+      function initMap() {
+        const myLatLng = {
+          lat: 25.74968910217285,
+             lng: -80.26239776611328
+        };
+        const map = new google.maps.Map(document.getElementById("gmp-map"), {
+          zoom: 19,
+          center: myLatLng,
+          fullscreenControl: false,
+          zoomControl: false,
+          streetViewControl: false
+        });
+        new google.maps.Marker({
+          position: myLatLng,
+          map,
+          title: "My location"
+        });
+      }
+    </script>
+                                        <div id="gmp-map"></div>                                         
+                                        <div class="col-12 mb-4 mb-lg-0 animated" data-animation="fadeInUp" data-animation-delay="1000" style="padding-left: 0px !important; padding-right: 0px !important;"> 
                                             <div class="feature-block d-flex"> 
                                                 <div class="feature-icon"> 
                                                     <div> <i class="ion-ios-heart-outline"></i> 
@@ -177,7 +195,7 @@
                                                 </div>                                                 
                                                 <div class="feature-content ml-4"> 
                                                     <h4>You’re going to love it</h4> 
-                                                    <p>Right across Coral Gables' City Hall, our sunset azotea bar will be the perfect spot to enjoy a cocktail after work.</p> 
+                                                    <p>Right across Coral Gables' City Hall, our sunset rooftop bar will be the perfect spot to enjoy a cocktail after work.</p> 
                                                 </div>
                                             </div>                                             
                                         </div>                                         
@@ -206,7 +224,7 @@
                 </nav>                 
                 <div class="copyright"> 
                     <div class="container text-center"> 
-                        <p>© 2024 Maiz y Agave - All Rights Reserved</p> 
+                        <p>© 2029 Maiz y Agave - All Rights Reserved</p> 
                     </div>                     
                 </div>                 
             </footer>             
