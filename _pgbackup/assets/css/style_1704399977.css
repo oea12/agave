@@ -1804,9 +1804,9 @@ hr.dark {
 
 .real {
     line-height: 28px;
+    padding: 0px;
     margin: 0px;
-    padding-left: 28px;
-    padding-right: 28px;
+    width: auto;
 }
 
 .r {
